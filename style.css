@@ -1,0 +1,44 @@
+body {
+  font-family: Tektur, Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 90vh;
+}
+
+.gridRow {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.gridSquare {
+  flex: 1 1 0;
+  border: 2px solid black;
+  margin: -1px;
+}
+
+.unfilled {
+  background-color: white;
+}
+
+.filled {
+  background-color: black;
+}
