@@ -19,8 +19,9 @@ body {
 .grid {
   display: flex;
   flex-direction: column;
-  height: 90vh;
-  width: 90vh;
+  height: min(90vh, 90vw);
+  width: min(90vh, 90vw);
+  border: 1px solid black;
 }
 
 .gridRow {
@@ -31,14 +32,9 @@ body {
 
 .gridSquare {
   flex: 1 1 0;
-  border: 2px solid black;
-  margin: -1px;
 }
 
-.unfilled {
-  background-color: white;
-}
-
-.filled {
-  background-color: black;
+.colorModeChoices {
+  display: flex;
+  flex-direction: column;
 }

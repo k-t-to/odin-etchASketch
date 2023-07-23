@@ -14,11 +14,30 @@
   <div class = "header">
     <span class = "title">Etch-a-Sketch</span>
   </div>
-  <div class = "optionMenu">
-    <label for="numSquare">Number of Squares per Side:</label>
-    <input type = "number" id = "numSquare" name = "# Squares", value = "16", min = "1", max = "100">
-    <button class = "drawBtn">Draw Grid</button>
-  </div>
+
+    <div>
+      <label for="numSquare">Number of Squares per Side:</label>
+      <input type = "number" id = "numSquare" name = "# Squares", value = "16", min = "1", max = "100">
+      <button class = "drawBtn">Draw Grid</button>
+    </div>
+    <fieldset>
+      <legend>Choose color mode:</legend>
+      <div class = "colorModeChoices">
+        <div>
+          <input type = "radio" id = "classic" name = "colorMode" value = "classic" checked>
+          <label for = "classic">Classic</label>
+        </div>
+        <div>
+          <input type = "radio" id = "random" name = "colorMode" value = "random">
+          <label for = "random">Random</label>
+        </div>
+        <div>
+          <input type = "radio" id = "gray" name = "colorMode" value = "gray">
+          <label for = "gray">Gray</label>
+        </div>
+      </div>
+    </fieldset>
+
   <div class = "grid">
   </div>
 </body>
