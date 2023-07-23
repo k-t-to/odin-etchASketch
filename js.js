@@ -1,10 +1,11 @@
 const grid = document.querySelector(".grid");
 let rgbVal;
-let rgbDir = 1;
+let rgbDir;
 
 function drawGrid() {
   grid.innerHTML = "";
   rgbVal = 225;
+  rgbDir = 1;
   const n = document.querySelector("#numSquare").value;
 
   for (let i = 0; i < n; i++) {
