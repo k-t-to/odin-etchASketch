@@ -31,6 +31,8 @@ function changeColor(e) {
       e.target.style.backgroundColor = "black";
     } else if (currentColor == "black") {
       e.target.style.backgroundColor = "white";
+    } else {
+      e.target.style.backgroundColor = ['black', 'white'][Math.floor(Math.random() * 2)];
     }
   } else if (mode == "random") {
     let randomColor = Math.floor(Math.random()*16777215).toString(16);
